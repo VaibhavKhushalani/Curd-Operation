@@ -11,7 +11,7 @@ import {
 
 const App = () => {
   //rendering data from database
-  //var Port='http://localhost:5000';
+  // var Port='http://localhost:5000';
    var Port='https://git.heroku.com/curd-operationapp.git';
   const [userdata, setUserData] = useState([]);
   const [updatestate, setUpdatestate] = useState(0);
@@ -25,8 +25,8 @@ const App = () => {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      // crossDomain: true,
-      //   credentials: "include",
+      crossDomain: true,
+        credentials: "include",
     });
 
     const data = await res.json();
@@ -122,7 +122,7 @@ const App = () => {
     } else {
       window.confirm("Confirm Delete");
       await fetch(`${Port}/deletepost/:id`, {
-        method: "POST",
+        method: "DELETE",
         body: JSON.stringify({
           color,
         }),
