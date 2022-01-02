@@ -1,0 +1,30 @@
+.App{
+margin: 60px;
+}
+.btn{
+margin:30px;
+width:80px;
+}
+.btn-main{
+display: flex;
+justify-content: center;
+}
+.Table{
+  padding: 30px,30px,30px,30px;
+}
+.form{
+  display: inline-grid
+}
+.select-icon{
+float: right;
+margin-right: 10px;
+outline: none;
+border: none;
+background:transparent;
+}
+.change-color{
+background-color: rgb(197 197 197);
+}
+.table-color{
+  background-color:#fff;
+}
