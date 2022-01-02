@@ -22,11 +22,10 @@ const App = () => {
     const res = await fetch(`${Port}/getpost`, {
       method: "GET",
       headers: {
-        Accept: "application/json",
         "Content-Type": "application/json",
       },
-      crossDomain: true,
-        credentials: "include",
+      // crossDomain: true,
+      //   credentials: "include",
     });
 
     const data = await res.json();
