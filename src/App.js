@@ -12,7 +12,7 @@ import {
 const App = () => {
   //rendering data from database
   // var Port='http://localhost:5000';
-   var Port='https://curd-operationapp.herokuapp.com';
+  var Port='https://curd-operationapp.herokuapp.com';
   const [userdata, setUserData] = useState([]);
   const [updatestate, setUpdatestate] = useState(0);
   const [count, setCount] = useState(0);
